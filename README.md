@@ -32,3 +32,29 @@ Handles database interactions through Docker.
 
 Manages the application's database in a containerized environment.
 
+## Getting Started
+
+To run the Calculator Application locally:
+
+1. Clone the repository: `git clone https://github.com/alperkaanmz/calculator.git`
+2. Navigate to the project directory: `cd calculator`
+3. Open the solution file in your preferred C# development environment.
+4. Build the solution to install dependencies and compile the application.
+5. Run the application and start performing calculations.
+
+For Docker setup:
+
+1. Install Docker on your system.
+2. Go to the `database` directory.
+3. Build the Docker image: `docker build -t calculator-db .`
+4. Run the Docker container: `docker run -d -p 1433:1433 --name calculator-db-container calculator-db`
+
+Remember to configure the database connection string in the application's configuration files.
+
+## Usage
+
+1. Launch the Calculator Application.
+2. Input two numbers.
+3. Choose an arithmetic operation.
+4. Click "Calculate" to view the result.
+
